@@ -1,0 +1,591 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+	background-color: #EFF3F4;
+}
+
+h1{
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+    font-family: Futura;
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: 0.33px;
+    color: #000000;
+}
+
+h2{
+	font-size: 25px;
+	text-align: center;
+    font-family: Futura;
+    font-weight: bold;
+    letter-spacing: 0.33px;
+    color: #b68383;
+    text-shadow: 
+      1px 1px 0px white, 
+      4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3{
+	font-family: Futura;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    color: #919191;
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute; /*my edit*/
+  top: -40px;      /*my edit*/
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{ /*my edit*/
+  top: 0px;   /*my edit*/
+}
+
+.scale-up {
+	-webkit-animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Reference: CSS animation help from Animista.
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.navs a{
+	padding: 5px 20px;
+	text-decoration: none;
+    font-family: Futura;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: 2em;
+    letter-spacing: 1px;
+    color: #919191;
+}
+
+.navs a:hover{
+	background-color: #ddd;
+}
+
+.navs a.active{
+	background-color: black;
+	color: white;
+}
+
+.container {
+	height: 90vh;
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+img{
+	height: auto;
+	border-radius: 15px;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.money{
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+}
+
+.minimal{
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+}
+
+.yelp{
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+}
+
+.container_jams {
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  background-image: url("imgs/design_jams.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adobe{
+	background: white;
+	padding: 35px;
+	border-radius: 20px;
+
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+	height: 75%;
+	margin: 10px;
+}
+
+.lucid{
+	background: white;
+	padding: 35px;
+	border-radius: 20px;
+
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+	height: 75%;
+	margin: 10px;
+}
+
+.deloitte{
+	background: white;
+	padding: 35px;
+	border-radius: 20px;
+
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+	height: 75%;
+	margin: 10px;
+}
+
+.lakes{
+	background: white;
+	padding: 35px;
+	border-radius: 20px;
+
+	padding: 20px;
+	font-family: Futura;
+	font-size: 19px;
+	font-weight: 500;
+	font-stretch: 2em;
+	line-height: 1em;
+	letter-spacing: 0.33px;
+	color: #000000;
+	height: 75%;
+	margin: 10px;
+}
+
+.container_reads {
+	height: 90vh;
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+}
+
+.digital {
+/*	background: #D6B9AF;*/
+	border: solid #ded5d2;
+	border-width: 5px;
+	padding: 35px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.digital_image{
+	max-width: 40%;
+	margin: auto;
+}
+
+.hooked {
+/*	background: #D6B9AF;*/
+	border: solid #ded5d2;
+	border-width: 5px;
+	padding: 35px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.hooked_image{
+	max-width: 40%;
+	margin: auto;
+}
+
+.blink {
+/*	background: #D6B9AF;*/
+	border: solid #ded5d2;
+	border-width: 5px;
+	padding: 35px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.blink_image{
+	max-width: 40%;
+	margin: auto;
+}
+
+.everything {
+/*	background: #D6B9AF;*/
+	border: solid #ded5d2;
+	border-width: 5px;
+	padding: 35px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.everything_image{
+	max-width: 40%;
+	margin: auto;
+}
+
+.container_about {
+	height: 90vh;
+	margin: 2rem;
+	display: grid;
+	grid-gap: 20px;
+}
+
+.general{
+	background: #dcdcff;
+	padding: 35px;
+	border-radius: 20px;
+	grid-column: 1 / 3;
+	margin: 10px;
+}
+
+.headshot_image{
+	max-width: 20%;
+	padding-right: 35px;
+/*	float: left;*/
+	display: inline;
+}
+
+.courses{
+	background: #dcdcff;
+	padding: 35px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.previously{
+	background: #dcdcff;
+	padding: 35px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.gallery{
+	height: 90vh;
+	margin: 20px;
+	display: grid;
+}
+
+.flip_card {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  float: left;
+  width: 180px;
+}
+
+.flip_card:hover {
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.flip_card img {
+  width: 100%;
+  height: auto;
+}
+
+.flip_card:hover{
+	filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+}
+
+.description {
+  padding: 15px;
+  text-align: center;
+}
+
+/*code below was build using the w3 schools responsive form designs page as reference*/
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: Futura;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Futura;
+}
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  font-family: Futura;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.container2 {
+  padding: 20px;
+}
+
+.type1 {
+  float: left;
+  width: 20%;
+  margin-top: 5px;
+}
+
+.type_text {
+  float: left;
+  width: 80%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer{
+	text-align: right;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+	html{
+		scroll-behavior: auto;
+	}
+	.scale-up{
+		animation: none;
+	}
+	.skip a{
+		transition: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+  .type1, .type_text, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .navs a {
+  	display: block;
+    width: 25%;
+	text-align: center;
+	padding: 5px;
+	align-items: center;
+	margin: auto;
+  }
+  .container{
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding:20px;
+  }
+
+  .container_jams{
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding: 20px;
+  }
+
+  .container_reads{
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding-bottom: 20px;
+  }
+
+  .container_about {
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding: 20px;
+  }
+
+  .general{
+  	padding:20px;
+  }
+
+  .courses{
+  	padding:20px;
+  }
+
+  .previously{
+  	padding:20px;
+  }
+
+  h1 {
+  	text-align: center;
+  }
+
+  img{
+  	max-width: 60%;
+  }
+
+  .headshot_image{
+  	max-width: 75%;
+  	padding-bottom: 35px;
+  	float: none;
+	margin: auto;
+	padding-right: 0;
+	padding-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .navs a {
+  	display: block;
+    width: 25%;
+	text-align: center;
+	padding: 5px;
+	align-items: center;
+	margin: auto;
+  }
+  .container{
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding:20px;
+  }
+
+  .container_jams{
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding: 20px;
+  }
+
+  .container_reads{
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding-bottom: 20px;
+  }
+
+  .digital_image{
+  	max-width:75%; 
+  }
+
+  .hooked_image{
+  	max-width:75%; 
+  }
+
+  .blink_image{
+  	max-width:75%; 
+  }
+
+  .everything_image{
+  	max-width:75%; 
+  }
+
+  .container_about {
+  	display: flex;
+  	flex: 0 auto;
+  	display: block;
+  	padding: 20px;
+  }
+
+  h1 {
+  	text-align: center;
+  }
+
+  img{
+  	max-width: 60%;
+  }
+
+  .headshot_image{
+  	max-width: 75%;
+  	padding-bottom: 35px;
+  	float: none;
+	margin: auto;
+	padding-right: 0;
+	padding-bottom: 0;
+  }
+
+}
+
